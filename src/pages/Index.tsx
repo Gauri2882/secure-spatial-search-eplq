@@ -7,10 +7,7 @@ import {
   User, 
   ShieldAlert, 
   ChevronRight, 
-  Globe, 
   Lock,
-  Database,
-  Search
 } from 'lucide-react';
 
 const Index = () => {
@@ -72,121 +69,8 @@ const Index = () => {
         </div>
       </section>
       
-      {/* Features */}
-      <section className="container mx-auto px-4 py-16">
-        <h2 className="text-3xl font-bold text-center mb-12">Key Features</h2>
-        
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="bg-card border border-border/60 rounded-lg p-6 flex flex-col">
-            <div className="bg-primary/10 p-3 rounded-full w-fit mb-4">
-              <Lock className="h-6 w-6 text-primary" />
-            </div>
-            <h3 className="text-xl font-semibold mb-2">Privacy Protection</h3>
-            <p className="text-muted-foreground mb-4 flex-grow">
-              Our predicate-only encryption system prevents location data exposure
-              while enabling effective spatial queries.
-            </p>
-            <div className="text-sm text-primary font-medium flex items-center">
-              Advanced Encryption <ChevronRight className="h-4 w-4 ml-1" />
-            </div>
-          </div>
-          
-          <div className="bg-card border border-border/60 rounded-lg p-6 flex flex-col">
-            <div className="bg-accent/10 p-3 rounded-full w-fit mb-4">
-              <Search className="h-6 w-6 text-accent" />
-            </div>
-            <h3 className="text-xl font-semibold mb-2">Spatial Range Queries</h3>
-            <p className="text-muted-foreground mb-4 flex-grow">
-              Find points of interest within circular areas while keeping
-              your exact location encrypted and secure.
-            </p>
-            <div className="text-sm text-primary font-medium flex items-center">
-              Efficient Searching <ChevronRight className="h-4 w-4 ml-1" />
-            </div>
-          </div>
-          
-          <div className="bg-card border border-border/60 rounded-lg p-6 flex flex-col">
-            <div className="bg-secondary/10 p-3 rounded-full w-fit mb-4">
-              <Database className="h-6 w-6 text-secondary" />
-            </div>
-            <h3 className="text-xl font-semibold mb-2">Optimized Performance</h3>
-            <p className="text-muted-foreground mb-4 flex-grow">
-              Our privacy-preserving tree index structure delivers 
-              fast query responses without compromising security.
-            </p>
-            <div className="text-sm text-primary font-medium flex items-center">
-              Low Latency <ChevronRight className="h-4 w-4 ml-1" />
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      {/* How It Works */}
-      <section className="container mx-auto px-4 py-16 bg-card rounded-lg border border-border/60 my-16">
-        <h2 className="text-3xl font-bold text-center mb-12">How EPLQ Works</h2>
-        
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="text-center">
-            <div className="bg-primary/10 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4">
-              <div className="bg-primary text-primary-foreground w-6 h-6 rounded-full flex items-center justify-center text-sm">1</div>
-            </div>
-            <h3 className="font-semibold mb-2">Encrypt Location</h3>
-            <p className="text-sm text-muted-foreground">
-              Your device encrypts your location data before sending any queries
-            </p>
-          </div>
-          
-          <div className="text-center">
-            <div className="bg-primary/10 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4">
-              <div className="bg-primary text-primary-foreground w-6 h-6 rounded-full flex items-center justify-center text-sm">2</div>
-            </div>
-            <h3 className="font-semibold mb-2">Create Secure Query</h3>
-            <p className="text-sm text-muted-foreground">
-              The system generates a privacy-preserving spatial range query
-            </p>
-          </div>
-          
-          <div className="text-center">
-            <div className="bg-primary/10 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4">
-              <div className="bg-primary text-primary-foreground w-6 h-6 rounded-full flex items-center justify-center text-sm">3</div>
-            </div>
-            <h3 className="font-semibold mb-2">Process with EPLQ</h3>
-            <p className="text-sm text-muted-foreground">
-              Our server processes the query using encrypted data and tree index
-            </p>
-          </div>
-          
-          <div className="text-center">
-            <div className="bg-primary/10 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4">
-              <div className="bg-primary text-primary-foreground w-6 h-6 rounded-full flex items-center justify-center text-sm">4</div>
-            </div>
-            <h3 className="font-semibold mb-2">Receive Secure Results</h3>
-            <p className="text-sm text-muted-foreground">
-              You receive encrypted results that only you can decrypt
-            </p>
-          </div>
-        </div>
-      </section>
-      
-      {/* CTA */}
-      <section className="container mx-auto px-4 py-16 text-center">
-        <div className="max-w-2xl mx-auto">
-          <h2 className="text-3xl font-bold mb-4">
-            Ready to Protect Your Location Privacy?
-          </h2>
-          <p className="text-muted-foreground mb-8">
-            Join EPLQ today and experience location-based services with enhanced privacy protection.
-          </p>
-          <Link to="/register">
-            <Button size="lg" className="px-8">
-              Create Your Account
-            </Button>
-          </Link>
-        </div>
-      </section>
-      
       {/* Footer */}
-      <footer className="border-t border-border/40 py-8">
+      <footer className="border-t border-border/40 py-8 mt-16">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="flex items-center gap-2 mb-4 md:mb-0">
@@ -198,9 +82,9 @@ const Index = () => {
             </div>
             
             <div className="flex items-center gap-6 text-sm text-muted-foreground">
-              <a href="#" className="hover:text-foreground">Privacy Policy</a>
-              <a href="#" className="hover:text-foreground">Terms of Service</a>
-              <a href="#" className="hover:text-foreground">Contact</a>
+              <Link to="#" className="hover:text-foreground">Privacy Policy</Link>
+              <Link to="#" className="hover:text-foreground">Terms of Service</Link>
+              <Link to="#" className="hover:text-foreground">Contact</Link>
             </div>
           </div>
         </div>
